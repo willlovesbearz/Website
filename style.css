@@ -1,0 +1,197 @@
+﻿@keyframes expand {
+    0% {max-width: 1px; padding: 18px 1px; color:rgba(255,255,255,0); background-color: #8B0A0A;}
+    50% {color:rgba(255,255,255,0); background-color: #8B0A0A;}
+	66% {max-width:150px; padding: 18px 10px;}
+	100%{rgba(255,255,255,1); background-color: #9C0A0A;}
+}
+@keyframes contract {
+    0% {max-width: 1px; padding: 18px 1px; color:rgba(255,255,255,0); background-color: #8B0A0A;}
+    50% {color:rgba(255,255,255,0); background-color: #8B0A0A;}
+	66% {max-width:150px; padding: 18px 10px;}
+	100%{rgba(255,255,255,1); background-color: #9C0A0A;}
+}
+.btn {
+    background-color: #9C0A0A;
+    border: none;
+    color: white;
+    padding: 4px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	border-radius:10px;
+}
+ .btn:hover {
+    background-color: #AC5A0A;
+    transition:0.75s;
+	transform:scale(1.1);
+}
+.btn:active{
+	background-color: #2AAC0A;
+    transition:0.25s;
+	transform:scale(0.9);
+}
+body{
+margin:0px;
+border:2px solid #10AF20;
+background:#0F0A02;
+}
+.btn-group .button {
+    background-color: #9C0A0A;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration:none;
+	font-family:Ariel,sans-serif;
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+    float: right;
+    z-index:9;
+}
+
+.btn-group .button:hover {
+    background-color: #AC5A0A;
+    transition:0.75s;
+    z-index:11;
+}
+.btn-group .button:active {
+    background-color: #0AA00A;
+    transition:0.2s;
+    }
+.flex-container {
+  display: flex;
+  background-color: black;
+  margin:5px;
+}
+.card{border:2px solid #2EDC2E;
+	border-radius:10px;
+    padding:10px;
+    margin:10px;
+    background:#23102D;
+    box-shadow: 5px 5px 3px #3C2020;
+    transition:.25s;
+    color:white;
+	text-decoration:none;
+	height:200px; 
+	width:150px; 
+	background:radial-gradient(#3F3030,#2C2020,#101010)
+}
+.card:hover{
+	border:2px solid #1010A0;
+    transform:scale(1.05);
+    transition:.75s;
+    }
+.card:active{
+	transform:scale(0.95);
+    border:2px solid #AE2C1D;
+	transition:.25s;
+	}
+.header{
+        background:#000F0F;
+		border:3px solid #7F0F0F;
+        position:sticky;
+        top: 0;
+        z-index:10;
+        flex-wrap: wrap;
+        }
+h1   {color: #9A0F1D;
+	font-family:Consolas,monospace;
+    margin:0px;
+    text-shadow:2px 2px 4px #109E00,-2px 2px 4px #109E00,-2px -2px 4px #109E00,2px -2px 4px #109E00;
+    }
+h3{ font-family:Verdana,sans-serif;
+    margin:0px;}
+h4{ font-family:Verdana,sans-serif;
+    margin:0px;
+    text-align:center;}
+h5{ font-family:Verdana,sans-serif;
+    margin:0px;
+    text-align:center;}
+p{
+font-family:Verdana,sans-serif;
+}		
+.logobox{
+	width:64px;
+    border:none;
+    height:64px;
+    }
+.mainbox{
+	flex-wrap: wrap;
+    align-content: flex-start;
+    background:#1F1F1F;
+    border:3px solid #2F2FAF;
+    color:#AFAFAF;
+    padding:15px 15px;
+    }
+.maintext{
+	font-family:Ariel,sans-serif;
+    color:#5F5FCF;
+    font-size:20px;
+    }
+.title{
+	font-size:24px;
+    white-space: nowrap;
+    }
+.bracket{
+	background-color: #8B0A0A;
+    border: none;
+    color: #ffffff;;
+    padding: 5px 10px;
+    text-align: center;
+    font-family:Ariel,sans-serif;
+    display: inline-block;
+    font-size: 40px;
+}
+.navigation{
+    
+	display:flex;
+    width: 607px;
+    flex-wrap: wrap;
+    }
+.linkbox{
+	width:100%;
+	border:2px solid #AE9F00;
+	padding:5px;
+	border-radius:20px;
+    box-shadow: 5px 5px 3px #3C2020;
+    transition:.25s;
+    color:white;
+	text-decoration:none;
+    margin:10px;
+}
+.linkbox:hover{
+    transform: scale(1.01);
+    border: 2px solid #0510AF;
+    transition:.25s;
+    }
+.navigation .button{
+    height:30px;    
+    max-width: 0px;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+    animation: contract 1s;
+}
+.navigation:hover .button{
+    animation-fill-mode: forwards;
+    animation-direction: forwards;
+    animation: expand 1s;
+	display:inline-block;
+    padding: 18px 10px;
+    max-width:150px;
+}
+
+.card:active[id=card0]{
+	transform:rotatey(180deg);
+    transition:.2s;
+    }
+p[id=card0_side2]{
+display:none;
+}
+.card:active[id=card0] [id=card0_side1]{
+display:none;
+}
+.card:active[id=card0] [id=card0_side2]{
+display:block;
+transform:rotatey(180deg);
+}
